@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-5">
+        <div class="text-center">
+            <img src="{% static 'core/images/rifat.jpg' %}" alt="profilepic"
+            class="img-thumbnail" width="150px">
+        </div>
+        
+        <div class="mt-5 text-white mx-5 text-justify">
+            <h1 class="text-weight-bold">Hello,</h1>
+            <div class="px-4" style="line-height: 2rem;">
+                <p style="text-indent: 100px;">I am <b class="text-warning">Rifat Ibn Taher,</b> have
+                full-stack web development experiences for global businesses,
+                I offer the technical expertise you are seeking for your web
+                developer position.</p>
+                <p>Since earning my bachelor's degree in Computer Science & Engineering form Chittagong University of Engineering & Technology, I have served as a web
+                developer at <b class="text-warning">***</b>, one
+                of the biggest premier digital marketing & web development projects
+                for clients in diverse industries including technology,
+                manufacturing, pharmaceutical, hospitality, retail and
+                financial services.</p>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5">Hire Me</a>
+            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,55 @@
+{% extends 'core/base.html' %}
+
+{% block title %}<title>Contact</title>{% endblock title %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-warning border-bottom mb-5">Contact</h1>
+
+    <div class="row text-white mb-4">
+        <p class="mx-auto mb-4 text-center">Do you have any question? Please, don't hesitate to contact.
+            I will come back yo you within a matter of hours to help you.</p>
+         
+        <div class="col-sm-9 mb-4">
+            <form action="">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <label for="inputname" class="form-label">Your Name</label>
+                        <input type="text" class="form-control" id="inputname">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputemail" class="form-label">Email*</label>
+                        <input type="email" class="form-control" id="inputemail" required>
+                    </div>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="inputsubject" class="form-label">Your Subject</label>
+                    <input type="text" class="form-control" id="inputsubject">
+                </div>
+                <div class="mb-3 mt-2">
+                    <label for="inputmessage" class="form-label">Your Message*</label>
+                    <textarea type="text" class="form-control" id="inputmessage" required></textarea>
+                </div>
+                    <button type="button" class="btn btn-primary">Send</button>
+            </form>   
+        </div>
+        
+        <div class="col-sm-3 mb-4  mt-4">
+            <ul class="list-unstyled">
+                <li>
+                    <a href="#"><i class="fas fa-laptop-code fa-2x i-color"></i></a>
+                    <p>Ranchi, Jharkhand, India</p></li>
+                <li>
+                    <a href="#"><i class="fas fa-laptop-code fa-2x i-color mt-2"></i></a>
+                    <p>Ranchi, Jharkhand, India</p></li>
+                <li>
+                    <a href="#"><i class="fas fa-laptop-code fa-2x i-color mt-2"></i></a>
+                    <p>Ranchi, Jharkhand, India</p></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
