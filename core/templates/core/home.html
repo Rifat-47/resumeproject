@@ -1,30 +1,55 @@
-{% extends 'core/base.html' %}
-{% load static %}
-{% block content %}
-    <div class="mt-5">
-        <div class="text-center">
-            <img src="{% static 'core/images/rifat.jpg' %}" alt="profilepic"
-            class="img-thumbnail" width="150px">
-        </div>
-        
-        <div class="mt-5 text-white mx-5 text-justify">
-            <h1 class="text-weight-bold">Hello,</h1>
-            <div class="px-4" style="line-height: 2rem;">
-                <p style="text-indent: 100px;">I am <b class="text-warning">Rifat Ibn Taher,</b> have
-                full-stack web development experiences for global businesses,
-                I offer the technical expertise you are seeking for your web
-                developer position.</p>
-                <p>Since earning my bachelor's degree in Computer Science & Engineering form Chittagong University of Engineering & Technology, I have served as a web
-                developer at <b class="text-warning">***</b>, one
-                of the biggest premier digital marketing & web development projects
-                for clients in diverse industries including technology,
-                manufacturing, pharmaceutical, hospitality, retail and
-                financial services.</p>
-            </div>
-        </div>
-        <div class="text-center">
-            <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5">Hire Me</a>
-            <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
-        </div>
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+  <div class="text-center">
+    <img
+      src="{% static 'core/images/rifat.jpg' %}"
+      alt="profilepic"
+      class="img-thumbnail"
+      width="150px"
+    />
+  </div>
+
+  <div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="text-weight-bold">Hello,</h1>
+    <div class="px-4" style="line-height: 2rem">
+      <p style="text-indent: 100px">
+        I am <b class="text-warning">Rifat Ibn Taher,</b> as a QA Engineer
+        (Manual & Automation), I have formulated effective test strategies,
+        created and maintained comprehensive test cases, written automation
+        scripts and have a solid understanding of SDLC, and collaborated with
+        development teams to ensure API quality, security, and performance.
+      </p>
+      <p>
+        My skills include manual and automation testing, performance testing,
+        and security testing. Proficient in tools like Selenium, Postman, Azure
+        DevOps, JMeter, and Git. I bring hands-on experience in Python,
+        JavaScript, HTML, CSS, React, and SQL.
+      </p>
+      <p>
+        Additionally, teamwork and collaboration are part of my skill set, with
+        proficiency in time management. Experience in interacting with diverse
+        populations has given me an in-depth understanding and awareness of
+        differences in both individuals and organizations. These qualities will
+        contribute to your company’s mission while positively highlighting the
+        professionalism and competencies of its employees.
+      </p>
+      {% comment %}
+      <p>
+        Since earning my bachelor's degree in Computer Science & Engineering
+        form Chittagong University of Engineering & Technology, I have served as
+        a web developer at <b class="text-warning">***</b>, one of the biggest
+        premier digital marketing & web development projects for clients in
+        diverse industries including technology, manufacturing, pharmaceutical,
+        hospitality, retail and financial services.
+      </p>
+      {% endcomment %}
     </div>
+  </div>
+  <div class="text-center">
+    <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 me-5"
+      >Hire Me</a
+    >
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+  </div>
+</div>
 {% endblock content %}
