@@ -11,7 +11,7 @@ Resume Project contains home, services, skill and contact page.
 Clone the project
 
 ```bash
-  https://github.com/Rifat-47/resumeproject.git
+  git clone https://github.com/Rifat-47/resumeproject.git
 ```
 
 Go to the project directory
