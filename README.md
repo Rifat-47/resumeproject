@@ -11,7 +11,7 @@ Resume Project contains home, services, skill and contact page.
 Clone the project
 
 ```bash
-  https://github.com/Rifat-47/resumeproject.git
+  git clone https://github.com/Rifat-47/resumeproject.git
 ```
 
 Go to the project directory
@@ -38,7 +38,7 @@ Activate virtual environment
 
 Install dependencies
 ```bash
-  pip install -r packages.txt
+  pip install -r requirements.txt
 ```
 
 Run Django migrations to apply database changes
@@ -64,11 +64,11 @@ To remove virtual environment completely:
   Remove-Item -Recurse -Force .\venvname
 ```
 
-Project can be run without using virtual environment.
+Project can be run without using virtual environment. 
 ```bash
   https://github.com/Rifat-47/resumeproject.git
   cd resumeproject
-  pip install -r packages.txt
+  pip install -r requirements.txt
   python manage.py runserver
 ```
 
